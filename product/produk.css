@@ -1,0 +1,90 @@
+body {
+  background-color: #0d0d0d;
+  color: #00ff00;
+  font-family: "Courier New", Courier, monospace;
+}
+.product-container {
+  padding: 20px;
+  border: 2px solid #00ff00;
+  box-shadow: 0 0 10px #00ff00;
+  border-radius: 10px;
+  margin-top: 20px; /* Tambahkan margin-top untuk ruang dengan navbar */
+  margin-bottom: 20px; /* Tambahkan margin-bottom untuk ruang dengan footer */
+  margin-left: 20px; /* Tambahkan margin-left untuk memberi ruang di sisi kiri */
+  margin-right: 20px; /* Tambahkan margin-right untuk memberi ruang di sisi kanan */
+}
+.card {
+  background-color: #1a1a1a;
+  color: #00ff00;
+  border: 1px solid #00ff00;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 20px; 
+}
+.card-body {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  height: 100%; /* Kartu diubah agar konsisten dalam tinggi */
+}
+.card-img-top {
+  height: 300px;
+  width: 100%; /* Gambar memenuhi lebar card */
+  object-fit: cover;
+  margin-bottom: 15px;
+  border-radius: 0; 
+}
+.btn-details,
+.btn-success {
+  background-color: #00ff00;
+  border: none;
+  color: #0d0d0d;
+  margin-top: auto; 
+  width: 100%; 
+  margin-bottom: 10px; 
+  border-radius: 0; 
+}
+.btn-details {
+  margin-right: 10px; /* Jarak antara tombol Details dan Buy */
+}
+.btn-details:hover,
+.btn-success:hover {
+  background-color: #00cc00;
+}
+.modal-content {
+  background-color: #1a1a1a;
+  color: #00ff00;
+  border: 1px solid #00ff00;
+}
+.modal-header,
+.modal-footer {
+  border-color: #00ff00;
+}
+.close {
+  color: #00ff00;
+}
+.modal-title {
+  font-family: "Courier New", Courier, monospace;
+}
+
+/* CSS untuk note ala hacker */
+.hacker-note {
+  background-color: #1a1a1a;
+  color: #00ff00;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 20px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 14px;
+  line-height: 1.5;
+  border: 2px solid #00ff00;
+  box-shadow: 0 0 10px #00ff00;
+  margin: 50px;
+}
+.hacker-note p {
+  margin: 5px 0;
+}

@@ -1,0 +1,890 @@
+@import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
+
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: "Share Tech Mono", monospace;
+}
+/* General Styles */
+
+a {
+  color: #00ff00;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #009900; /* Darker green on hover */
+}
+
+/* navbar nempel*/
+.header_section {
+  width: 100%;
+  background-color: #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+body {
+  padding-top: 140px;
+}
+
+/* Header*/
+.header_top {
+  background-color: #000;
+  padding: 10px 0;
+}
+
+.header_top_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.contact_nav a {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  color: #00ff00;
+  font-family: "Share Tech Mono", monospace;
+}
+
+.contact_nav a i {
+  margin-right: 8px;
+}
+
+.social_box a {
+  color: white;
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+.social_box a:hover {
+  color: #009900;
+}
+
+/* Header Bottom */
+.header_bottom {
+  padding: 10px 0;
+  background: linear-gradient(to right, #000000, #00ff00);
+}
+
+.custom_nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-brand {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "Share Tech Mono", monospace;
+  margin-left: 30px;
+}
+
+.navbar-toggler {
+  border: none;
+  background-color: #00ff00;
+}
+
+.navbar-toggler span {
+  background-color: #00ff00;
+  display: block;
+  width: 25px;
+  height: 2px;
+  margin: 5px 0;
+}
+
+.navbar-collapse {
+  flex-grow: 0;
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-item {
+  margin-left: 20px;
+  position: relative;
+}
+
+.nav-link {
+  color: white;
+  font-size: 18px;
+  font-family: "Share Tech Mono", monospace;
+  position: relative;
+  padding-bottom: 5px;
+  transition: color 0.3s ease;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  display: block;
+  background: black;
+  transition: width 0.3s;
+  bottom: 0;
+  left: 0;
+}
+
+.nav-link:hover {
+  color: white;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .header_top_container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contact_nav {
+    margin-bottom: 10px;
+  }
+
+  .social_box {
+    margin-bottom: 10px;
+  }
+
+  .navbar-collapse {
+    flex-grow: 1;
+    text-align: center;
+  }
+
+  .nav-item {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+}
+
+.video-container {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/* tentang */
+.tentang_section {
+  padding: 100px 0;
+  background-color: black; /* Background color for contrast */
+  font-family: "Share Tech Mono", monospace;
+}
+.heading_container {
+  text-align: center;
+  margin-bottom: 50px;
+  color: #00ff00;
+  font-family: "Share Tech Mono", monospace;
+}
+.heading_container h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+.heading_container p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+#tentang {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%;
+  margin-top: 30px;
+}
+#tentang video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* animasi */
+.typewriter {
+  overflow: hidden;
+  border-right: 0.15em solid green;
+  white-space: pre-wrap;
+  margin: 20px 0;
+  letter-spacing: 0.15em;
+  width: 100%;
+  max-width: 480px;
+  text-align: left;
+}
+
+.typewriter.completed {
+  text-align: justify;
+  border-right: none;
+}
+
+/* tentang akhir */
+
+/* services */
+.service_section {
+  padding: 100px 0;
+  background-color: #111; /* Dark background color */
+  color: #00ff00; /* Hacker green text color */
+  font-family: "Share Tech Mono", monospace; /* Hacker-themed font */
+}
+
+.service_section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.service_section .heading_container {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.service_section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.service_section p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+.service_container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.item {
+  width: calc(33.33% - 40px);
+  margin: 20px;
+  padding: 20px;
+  background-color: #000; /* Dark background for service items */
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 255, 0, 0.2); /* Hacker green shadow */
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.item:hover {
+  transform: translateY(-10px);
+}
+
+.item .icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.item h5 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.item p {
+  font-size: 1rem;
+}
+
+@media (max-width: 992px) {
+  .item {
+    width: calc(50% - 40px);
+  }
+}
+
+@media (max-width: 768px) {
+  .item {
+    width: 100%;
+    margin: 20px 0;
+  }
+}
+
+/* service akhir */
+
+/* iklan */
+.recent-logins {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.recent-logins .aside-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #4CAF50; /* Warna judul */
+}
+
+.recent-logins .search-container {
+    margin-bottom: 20px;
+}
+
+.recent-logins .search-container input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #4CAF50; 
+    border-radius: 4px;
+    background-color: #00FF00; 
+    color: black; 
+    outline: none;
+}
+
+.recent-logins .search-container input[type="text"]:focus {
+    border-color: #45a049; 
+}
+
+.recent-logins .table-responsive {
+    margin-top: 20px;
+}
+
+.recent-logins .table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.recent-logins .table th,
+.recent-logins .table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #dddddd; 
+    color: #ffffff; 
+    white-space: nowrap; 
+    overflow: hidden; /* Teks yang melebihi lebar akan disembunyikan */
+    text-overflow: ellipsis; /* Teks yang melebihi lebar akan ditampilkan dengan tanda titik-titik */
+}
+
+.recent-logins .table th {
+    background-color: #4CAF50; /* Warna latar header */
+}
+
+.recent-logins .table tbody tr:nth-child(even) {
+    background-color: #333333; /* Warna latar baris genap */
+}
+
+.recent-logins .table tbody tr:hover {
+    background-color: #555555; /* Warna latar saat hover */
+}
+
+.recent-logins .pagination {
+    margin-top: 20px;
+}
+
+.recent-logins .pagination .page-item .page-link {
+    color: #ffffff; /* Warna teks pagination */
+    background-color: #4CAF50; /* Warna latar pagination */
+    border: 1px solid #4CAF50; /* Warna border pagination */
+}
+
+.recent-logins .pagination .page-item .page-link:hover {
+    background-color: #45a049; /* Warna latar saat hover pagination */
+    border-color: #45a049; /* Warna border saat hover pagination */
+}
+
+/* Style untuk status online dan offline */
+.recent-logins .status-online {
+    color: #45a049; /* Warna teks status online */
+}
+
+.recent-logins .status-offline {
+    color: #ff0000; /* Warna teks status offline */
+}
+
+/* Style untuk level newbie, amateur, hacker, dan professional */
+.recent-logins .level-newbie {
+    background-color: #007bff; /* Warna latar level newbie */
+}
+
+.recent-logins .level-amateur {
+    background-color: #ffc107; /* Warna latar level amateur */
+}
+
+.recent-logins .level-hacker {
+    background-color: #dc3545; /* Warna latar level hacker */
+}
+
+.recent-logins .level-professional {
+    background-color: #28a745; /* Warna latar level professional */
+}
+
+/* Media query untuk membuat desain responsif */
+@media (max-width: 768px) {
+    .recent-logins .aside-title {
+        font-size: 20px;
+    }
+
+    .recent-logins .table th,
+    .recent-logins .table td {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .recent-logins .pagination .page-item .page-link {
+        padding: 6px 10px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    .recent-logins .aside-title {
+        font-size: 18px;
+    }
+
+    .recent-logins .table th,
+    .recent-logins .table td {
+        padding: 6px;
+        font-size: 12px;
+    }
+
+    .recent-logins .pagination .page-item .page-link {
+        padding: 4px 8px;
+        font-size: 12px;
+    }
+}
+
+/* testimoni */
+
+.testimonial_section {
+  background-color: #111; /* Dark background */
+  color: #00ff00; /* Hacker green color */
+  padding: 80px 0;
+  text-align: center;
+}
+
+.testimonial {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+.testimonial-item {
+  flex: 1;
+  margin: 20px;
+  padding: 20px;
+  background-color: #222; /* Darker background */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.5); /* Green shadow */
+  text-align: center;
+}
+
+.testimonial-content p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  font-family: "Share Tech Mono", monospace;
+}
+
+.testimonial-content .author {
+  display: block;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.rating {
+  color: #FFD700; /* Warna emas untuk bintang */
+  font-size: 1.2em; /* Ukuran bintang */
+  margin-top: 10px; /* Jarak antara teks testimoni dan bintang */
+}
+
+.rating i {
+  margin-right: 5px; /* Jarak antar bintang */
+}
+
+
+@media (max-width: 992px) {
+  .testimonial-item {
+    flex: 0 0 calc(50% - 40px);
+    margin: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonial-item {
+    flex: 0 0 100%;
+    margin: 20px 0;
+  }
+}
+
+/* akhir testimoni */
+
+
+footer {
+  background: linear-gradient(to right, #00ff00, #000000);
+  color: #ffffff;
+  padding: 1rem 0;
+  font-family: "Share Tech Mono", monospace;
+}
+footer .social-icons a {
+  color: #ffffff;
+  margin: 0 10px;
+  font-size: 20px;
+}
+
+
+ /* desain login */
+ 
+  .video-container1{
+    position: relative;
+              width: 480px;
+              height: 270px;
+              margin: auto;
+              border: 5px solid #00FF00; /* Border color hijau */
+              box-shadow: 0 0 10px #00FF00; /* Shadow color hijau */
+          
+  }
+  .video-container1 video{
+    position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+  }
+
+  .login-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #222; /* Background hitam */
+    color: #00FF00; /* Warna teks hijau */
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid #00FF00; /* Border hijau */
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.5); /* Shadow hijau */
+    position: relative; /* Untuk mengatur posisi alert */
+}
+
+.login-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.login-container .input-group {
+    margin-bottom: 15px;
+}
+
+.login-container label {
+    display: block;
+    margin-bottom: 5px;
+    color: #fff; /* Warna label putih */
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #00FF00; /* Border hijau */
+    border-radius: 5px;
+    background-color: #333; /* Background abu-abu gelap */
+    color: #00FF00; /* Warna teks hijau */
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.login-container button {
+    padding: 10px 20px;
+    background-color: #00FF00;
+    border: none;
+    border-radius: 5px;
+    color: #333;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-container button:hover {
+    background-color: #00CC00;
+}
+
+.login-container p {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #fff; /* Warna teks putih */
+}
+
+.login-container p a {
+    color: #00FF00;
+    text-decoration: none;
+}
+
+.login-container p a:hover {
+    text-decoration: underline;
+}
+
+.login-container .light-text {
+    color: #aaa;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.alert {
+    position: absolute;
+    top: 20px; /* Atur posisi alert di bagian atas */
+    left: 50%; /* Pusatkan alert */
+    transform: translateX(-50%); /* Pusatkan horizontal */
+    background-color: #00FF00; /* Warna background hijau */
+    color: #333; /* Warna teks hitam */
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.5); /* Shadow hijau */
+    display: none; /* Sembunyikan alert secara default */
+}
+
+.alert-danger {
+  background-color: #8b0000;
+  border-color: #8b0000;
+  color: #fff;
+}
+
+.login-container.logged-in .alert {
+    display: block; /* Tampilkan alert ketika logged-in class aktif */
+}
+
+/* hacker note */
+.hacker-note {
+  margin: 20px;
+  padding: 20px;
+  background-color: #111; /* Background hitam gelap */
+  border: 2px solid #00FF00; /* Border hijau */
+  border-radius: 5px;
+  color: #00FF00; /* Warna teks hijau */
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.5); /* Shadow hijau */
+  font-family: "Share Tech Mono", monospace; /* Font hacker-themed */
+}
+
+/* Heading jika ada */
+.hacker-note h3 {
+  font-size: 1.25rem; /* Ukuran font lebih kecil */
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Teks dalam note */
+.hacker-note p {
+  font-size: 1rem; /* Ukuran font default */
+  line-height: 1.6;
+}
+
+/* baru login */
+
+.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.video-background video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+body.darkweb-body {
+  background-color: #0f0f0f;
+  font-family: 'Courier New', Courier, monospace;
+  color: #00ff00;
+}
+
+.btn-darkweb-rules {
+  background-color: #000;
+  color: #00ff00;
+  border: 1px solid #00ff00;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.btn-darkweb-rules:hover {
+  background-color: #00ff00;
+  color: #000;
+}
+.alert-darkweb {
+  display: none;
+  background-color: #000;
+  color: #00ff00;
+  border: 1px solid #00ff00;
+  padding: 20px;
+  border-radius: 10px;
+  font-family: 'Courier New', Courier, monospace;
+  margin-top: 20px;
+}
+.modal-content-darkweb {
+  background-color: #000;
+  color: #00ff00;
+  border: 1px solid #00ff00;
+}
+
+
+/* Responsif untuk tablet */
+@media (max-width: 768px) {
+  .hacker-note {
+    margin: 15px;
+    padding: 15px;
+  }
+
+  .hacker-note h3 {
+    font-size: 1.1rem; /* Ukuran font lebih kecil untuk tablet */
+  }
+
+  .hacker-note p {
+    font-size: 0.9rem; /* Ukuran font lebih kecil untuk tablet */
+  }
+}
+
+
+/* Responsif untuk ponsel */
+@media (max-width: 480px) {
+  .hacker-note {
+    margin: 10px;
+    padding: 10px;
+  }
+
+  .hacker-note h3 {
+    font-size: 1rem; /* Ukuran font lebih kecil untuk ponsel */
+  }
+
+  .hacker-note p {
+    font-size: 0.8rem; /* Ukuran font lebih kecil untuk ponsel */
+  }
+}
+
+/* akhir login */
+
+/* register */
+
+.hacker-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #222; /* Background hitam gelap */
+  border: 1px solid #00FF00; /* Border hijau */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.5); /* Shadow hijau */
+  text-align: center;
+}
+
+/* Form Styles */
+.hacker-container h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.hacker-form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.hacker-form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.hacker-form-group input[type="text"],
+.hacker-form-group input[type="password"] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  border: 1px solid #00FF00; /* Border hijau */
+  border-radius: 5px;
+  background-color: #333; /* Background abu-abu gelap */
+  color: #00FF00; /* Warna teks hijau */
+  font-size: 16px;
+}
+
+/* Button Styles */
+.hacker-button {
+  padding: 10px 20px;
+  background-color: #00FF00; /* Background hijau */
+  border: none;
+  border-radius: 5px;
+  color: #333; /* Warna teks hitam */
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.hacker-button:hover {
+  background-color: #00CC00; 
+}
+
+/* tekt hacker*/
+.hacker-info {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.hacker-info a {
+  color: #00FF00; 
+  text-decoration: none;
+}
+
+.hacker-info a:hover {
+  text-decoration: underline;
+}
+
+/* animasi */
+.typing-animation {
+  text-align: center; 
+}
+
+.typing-animation h1 {
+  overflow: hidden; /* Mengatur overflow agar teks terpotong */
+  border-right: .15em solid #00FF00; /* Garis teks yang berkedip */
+  white-space: nowrap; /* Mencegah wrapping teks */
+  margin: 20px; /* Pusatkan teks secara horizontal */
+  letter-spacing: .15em; /* Spasi antar huruf */
+  animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite; /* Animasi ketikan */
+  font-size: 2rem; /* Ukuran teks default */
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #00FF00; }
+}
+
+@media (max-width: 768px) {
+  .typing-animation h1 {
+    font-size: 1.5rem; /* Ukuran teks lebih kecil untuk layar tablet */
+  }
+}
+
+@media (max-width: 480px) {
+  .typing-animation h1 {
+    font-size: 1.2rem; /* Ukuran teks lebih kecil untuk layar ponsel */
+  }
+}
+
+/* musik */
+.music-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #00FF00;
+  color: #333;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.music-button:hover {
+  background-color: #00CC00;
+}
+
+
