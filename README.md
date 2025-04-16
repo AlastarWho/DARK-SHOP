@@ -1,102 +1,114 @@
-# DARK-SHOP
+Tentu! Berikut adalah versi README yang **dipisahkan dengan jelas** antara bagian yang membutuhkan terminal/command line dan bagian lainnya. Ini akan membantu pengguna awam untuk lebih mudah mengikuti:
 
-Selamat datang di **DARK-SHOP**, aplikasi toko online yang sederhana namun powerful. Aplikasi ini memungkinkan admin untuk mengelola produk dan pelanggan dengan mudah, serta menyediakan pengalaman belanja yang nyaman untuk pengguna.
+---
 
-## 🚀 Cara Memulai
+```markdown
+# DARK-SHOP 🛒
 
-Berikut adalah langkah-langkah untuk mengatur proyek ini di komputer Anda.
+**DARK-SHOP** adalah aplikasi toko online sederhana yang bisa Anda jalankan secara lokal. Proyek ini cocok untuk dipelajari, dimodifikasi, atau dikembangkan lebih lanjut.
 
-### 1. **Clone Repositori**
+---
 
-Langkah pertama, clone repositori ini ke komputer Anda dengan menjalankan perintah berikut di terminal:
+## 📁 Langkah Awal (Tanpa Terminal)
+
+1. **Install XAMPP / Laragon**
+   - Download dan install XAMPP (https://www.apachefriends.org/) atau Laragon (https://laragon.org/) di komputer Anda.
+
+2. **Download Proyek**
+   - Anda bisa klik tombol `Code > Download ZIP` di halaman GitHub ini, lalu ekstrak ke folder `htdocs` (jika pakai XAMPP) atau `www` (jika pakai Laragon).
+   - Atau gunakan cara terminal di bawah.
+
+3. **Buat Database**
+   - Buka `phpMyAdmin` melalui `http://localhost/phpmyadmin`
+   - Buat database baru dengan nama: `darkshop_db`
+   - Import file SQL (jika tersedia, misalnya: `darkshop_db.sql`) dari folder proyek.
+
+4. **Sesuaikan Koneksi Database**
+   - Buka file `config.php` atau `.env` (tergantung struktur proyek).
+   - Pastikan konfigurasi seperti ini:
+     ```php
+     $host = 'localhost';
+     $dbname = 'darkshop_db';
+     $username = 'root';
+     $password = '';
+     ```
+
+5. **Akses Proyek**
+   - Jalankan Apache dan MySQL dari XAMPP atau Laragon.
+   - Buka browser dan akses:
+     ```
+     http://localhost/DARK-SHOP
+     ```
+
+---
+
+## 🖥️ Langkah Alternatif (Dengan Terminal)
+
+Jika Anda terbiasa menggunakan terminal/command line, berikut cara cepatnya:
 
 ```bash
+# Clone repositori ke komputer Anda
 git clone https://github.com/AlastarWho/DARK-SHOP.git
-2. Masuk ke Folder Proyek
-Setelah cloning selesai, buka folder proyek dengan perintah berikut:
 
-bash
-Copy
-Edit
+# Masuk ke folder proyek
 cd DARK-SHOP
-3. Set Up Database
-Buka phpMyAdmin atau aplikasi manajemen database lainnya.
+```
 
-Buat database baru dengan nama darkshop_db.
+---
 
-Import file SQL (biasanya ada di folder database atau sql di proyek ini) untuk membuat tabel-tabel yang diperlukan.
+## 🔑 Login Aplikasi
 
-4. Konfigurasi Koneksi Database
-Buka file konfigurasi (biasanya bernama config.php atau .env) dan sesuaikan dengan pengaturan database Anda. Contoh pengaturan:
+### Sebagai **Admin**
+- Username: `admin`
+- Password: `admin`
 
-php
-Copy
-Edit
-$host = 'localhost';
-$dbname = 'darkshop_db';
-$username = 'root';
-$password = '';
-5. Jalankan Proyek
-Setelah pengaturan selesai, jalankan server lokal Anda (misalnya XAMPP atau Laragon). Kemudian, buka browser dan akses aplikasi di:
+### Sebagai **User**
+- Username: `mahasiswa`
+- Password: `123`
 
-bash
-Copy
-Edit
-http://localhost/ atau http://localhost/nama-folder-anda
-🔑 Cara Masuk ke Aplikasi
-Aplikasi ini memiliki dua jenis login: Admin dan User.
+---
 
-Admin
-Username: admin
+## ✨ Fitur Utama
 
-Password: admin
+- Manajemen Produk (Tambah, Edit, Hapus)
+- Halaman Admin & User terpisah
+- Sistem Login Multi-Role
+- Tampilan user-friendly
 
-User
-Username: mahasiswa
+---
 
-Password: 123
+## 🤝 Kontribusi
 
-Sebagai Admin: Anda dapat mengelola produk, melihat pesanan, dan mengatur aplikasi.
+Ingin bantu kembangkan proyek ini? Ikuti langkah berikut:
 
-Sebagai User: Anda bisa melihat produk yang tersedia dan melakukan pembelian.
+```bash
+# 1. Fork repositori ini ke akun GitHub Anda
+# 2. Clone hasil fork ke lokal
+git clone https://github.com/username-anda/DARK-SHOP.git
 
-💡 Fitur Utama
-Admin Dashboard: Fitur untuk mengelola produk, melihat pesanan, dan mengelola pengguna.
+# 3. Buat branch untuk fitur baru
+git checkout -b fitur-baru-anda
 
-User Dashboard: Fitur untuk melihat produk, melakukan pembelian, dan interaksi lainnya.
+# 4. Setelah selesai, commit dan push
+git add .
+git commit -m "Tambah fitur baru"
+git push origin fitur-baru-anda
+```
 
-🤝 Kontribusi
-Jika Anda ingin berkontribusi atau memperbaiki sesuatu dalam proyek ini, ikuti langkah-langkah berikut:
+Lalu buat **Pull Request** dari GitHub.
 
-Fork repositori ini ke akun GitHub Anda.
+---
 
-Clone repositori yang sudah Anda fork ke komputer Anda.
+## 📄 Lisensi
 
-Buat fitur atau perbaikan yang ingin Anda tambahkan.
+Proyek ini menggunakan lisensi MIT. Silakan digunakan dan dimodifikasi sesuai kebutuhan pribadi maupun pembelajaran.
 
-Commit perubahan dan push ke repositori Anda.
+---
 
-Buat pull request untuk kontribusi Anda.
+Terima kasih sudah mampir ke **DARK-SHOP**! 🚀  
+Jangan ragu untuk kasih ⭐ dan buka *issue* jika ada kendala atau pertanyaan.
+```
 
-📝 Lisensi
-Proyek ini dilisensikan di bawah MIT License.
+---
 
-Terima kasih sudah menggunakan DARK-SHOP! Jika Anda memiliki pertanyaan atau saran, silakan buka issue di repositori ini. Kami sangat menghargai kontribusi Anda!
-
-markdown
-Copy
-Edit
-
-### Apa yang baru di template ini?
-1. **Penggunaan Emoji**: Menambahkan emoji untuk memberikan kesan lebih hidup dan memudahkan pembaca untuk menemukan bagian penting seperti fitur, instruksi, dan lisensi.
-2. **Bahasa yang Lebih Santai dan Jelas**: Menggunakan bahasa yang lebih ringan dan langsung pada intinya, sehingga lebih mudah dipahami oleh orang yang baru pertama kali melihat proyek Anda.
-3. **Bagian Kontribusi yang Lebih Terstruktur**: Mempermudah kontributor untuk memahami bagaimana cara berkontribusi ke proyek.
-
-Dengan format ini, diharapkan pembaca dapat dengan mudah mengikuti instruksi dan merasa lebih tertarik untuk berkontribusi pada proyek Anda.
-
-
-
-
-
-
-
+Kalau kamu ingin README ini langsung dimasukkan ke GitHub, simpan saja file dengan nama `README.md` di root folder proyek kamu. Mau saya bantu buat file-nya juga?
