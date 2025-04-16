@@ -12,7 +12,6 @@ Langkah pertama, clone repositori ini ke komputer Anda dengan menjalankan perint
 
 ```bash
 git clone https://github.com/AlastarWho/DARK-SHOP.git
-
 2. Masuk ke Folder Proyek
 Setelah cloning selesai, buka folder proyek dengan perintah berikut:
 
@@ -84,11 +83,20 @@ Proyek ini dilisensikan di bawah MIT License.
 
 Terima kasih sudah menggunakan DARK-SHOP! Jika Anda memiliki pertanyaan atau saran, silakan buka issue di repositori ini. Kami sangat menghargai kontribusi Anda!
 
-
+markdown
+Copy
+Edit
 
 ### Apa yang baru di template ini?
 1. **Penggunaan Emoji**: Menambahkan emoji untuk memberikan kesan lebih hidup dan memudahkan pembaca untuk menemukan bagian penting seperti fitur, instruksi, dan lisensi.
 2. **Bahasa yang Lebih Santai dan Jelas**: Menggunakan bahasa yang lebih ringan dan langsung pada intinya, sehingga lebih mudah dipahami oleh orang yang baru pertama kali melihat proyek Anda.
 3. **Bagian Kontribusi yang Lebih Terstruktur**: Mempermudah kontributor untuk memahami bagaimana cara berkontribusi ke proyek.
 
-Dengan format ini, diharapkan pembaca dapat dengan mudah mengikuti instruksi dan merasa lebih tertarik untu
+Dengan format ini, diharapkan pembaca dapat dengan mudah mengikuti instruksi dan merasa lebih tertarik untuk berkontribusi pada proyek Anda.
+
+
+
+
+
+
+
