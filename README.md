@@ -1,114 +1,72 @@
-Tentu! Berikut adalah versi README yang **dipisahkan dengan jelas** antara bagian yang membutuhkan terminal/command line dan bagian lainnya. Ini akan membantu pengguna awam untuk lebih mudah mengikuti:
+# DARK-SHOP
+
+**DARK-SHOP** adalah aplikasi toko online sederhana yang dapat digunakan sebagai template atau bahan belajar. Aplikasi ini memiliki dua role, yaitu admin dan user, dengan sistem login yang berbeda.
 
 ---
 
-```markdown
-# DARK-SHOP 🛒
+## 📌 Cara Pasang Aplikasi
 
-**DARK-SHOP** adalah aplikasi toko online sederhana yang bisa Anda jalankan secara lokal. Proyek ini cocok untuk dipelajari, dimodifikasi, atau dikembangkan lebih lanjut.
+**1. Download / Clone Proyek**
+- Anda bisa klik tombol **Code > Download ZIP**, lalu ekstrak ke dalam folder **htdocs** (untuk XAMPP) atau **www** (untuk Laragon).
+- Alternatif lain, Anda bisa melakukan *clone* menggunakan Git (jika Anda familiar).
 
----
+**2. Buat Database**
+- Buka _phpMyAdmin_ melalui browser, biasanya di _http://localhost/phpmyadmin_
+- Buat database baru dengan nama: **darkshop_db**
+- Import file SQL (jika tersedia, misalnya `darkshop_db.sql`) yang ada di dalam folder proyek ini.
 
-## 📁 Langkah Awal (Tanpa Terminal)
+**3. Atur Koneksi ke Database**
+- Buka file konfigurasi seperti _config.php_ atau _.env_
+- Ubah pengaturannya menjadi seperti ini:
 
-1. **Install XAMPP / Laragon**
-   - Download dan install XAMPP (https://www.apachefriends.org/) atau Laragon (https://laragon.org/) di komputer Anda.
+  - _host_: **localhost**
+  - _database name_: **darkshop_db**
+  - _username_: **root**
+  - _password_: _(kosongkan)_
 
-2. **Download Proyek**
-   - Anda bisa klik tombol `Code > Download ZIP` di halaman GitHub ini, lalu ekstrak ke folder `htdocs` (jika pakai XAMPP) atau `www` (jika pakai Laragon).
-   - Atau gunakan cara terminal di bawah.
-
-3. **Buat Database**
-   - Buka `phpMyAdmin` melalui `http://localhost/phpmyadmin`
-   - Buat database baru dengan nama: `darkshop_db`
-   - Import file SQL (jika tersedia, misalnya: `darkshop_db.sql`) dari folder proyek.
-
-4. **Sesuaikan Koneksi Database**
-   - Buka file `config.php` atau `.env` (tergantung struktur proyek).
-   - Pastikan konfigurasi seperti ini:
-     ```php
-     $host = 'localhost';
-     $dbname = 'darkshop_db';
-     $username = 'root';
-     $password = '';
-     ```
-
-5. **Akses Proyek**
-   - Jalankan Apache dan MySQL dari XAMPP atau Laragon.
-   - Buka browser dan akses:
-     ```
-     http://localhost/DARK-SHOP
-     ```
+**4. Jalankan Proyek**
+- Aktifkan Apache dan MySQL melalui XAMPP atau Laragon.
+- Buka browser, lalu akses: **http://localhost/DARK-SHOP**
 
 ---
 
-## 🖥️ Langkah Alternatif (Dengan Terminal)
+## 🔐 Info Login
 
-Jika Anda terbiasa menggunakan terminal/command line, berikut cara cepatnya:
+**Sebagai Admin**
+- **Username**: admin  
+- **Password**: admin
 
-```bash
-# Clone repositori ke komputer Anda
-git clone https://github.com/AlastarWho/DARK-SHOP.git
-
-# Masuk ke folder proyek
-cd DARK-SHOP
-```
+**Sebagai User**
+- **Username**: mahasiswa  
+- **Password**: 123
 
 ---
 
-## 🔑 Login Aplikasi
+## ✨ Fitur
 
-### Sebagai **Admin**
-- Username: `admin`
-- Password: `admin`
-
-### Sebagai **User**
-- Username: `mahasiswa`
-- Password: `123`
+- _Login multi-role (Admin & User)_
+- _Manajemen produk_
+- _Dashboard admin_
+- _Tampilan user-friendly_
+- _Data disimpan dalam database_
 
 ---
 
-## ✨ Fitur Utama
+## 🤝 Ingin Berkontribusi?
 
-- Manajemen Produk (Tambah, Edit, Hapus)
-- Halaman Admin & User terpisah
-- Sistem Login Multi-Role
-- Tampilan user-friendly
+Silakan gunakan proyek ini untuk keperluan belajar atau dikembangkan lebih lanjut. Anda bisa melakukan:
 
----
-
-## 🤝 Kontribusi
-
-Ingin bantu kembangkan proyek ini? Ikuti langkah berikut:
-
-```bash
-# 1. Fork repositori ini ke akun GitHub Anda
-# 2. Clone hasil fork ke lokal
-git clone https://github.com/username-anda/DARK-SHOP.git
-
-# 3. Buat branch untuk fitur baru
-git checkout -b fitur-baru-anda
-
-# 4. Setelah selesai, commit dan push
-git add .
-git commit -m "Tambah fitur baru"
-git push origin fitur-baru-anda
-```
-
-Lalu buat **Pull Request** dari GitHub.
+- _Fork_ proyek ini ke akun GitHub Anda
+- Tambahkan fitur atau perbaikan
+- Buat _Pull Request_ agar bisa digabungkan ke repositori utama
 
 ---
 
 ## 📄 Lisensi
 
-Proyek ini menggunakan lisensi MIT. Silakan digunakan dan dimodifikasi sesuai kebutuhan pribadi maupun pembelajaran.
+Proyek ini menggunakan lisensi **MIT**. Anda bebas menggunakan, mengubah, dan mendistribusikannya.
 
 ---
 
-Terima kasih sudah mampir ke **DARK-SHOP**! 🚀  
-Jangan ragu untuk kasih ⭐ dan buka *issue* jika ada kendala atau pertanyaan.
-```
-
----
-
-Kalau kamu ingin README ini langsung dimasukkan ke GitHub, simpan saja file dengan nama `README.md` di root folder proyek kamu. Mau saya bantu buat file-nya juga?
+Terima kasih telah menggunakan **DARK-SHOP**!  
+Jangan lupa beri bintang ⭐ di GitHub jika proyek ini bermanfaat.
